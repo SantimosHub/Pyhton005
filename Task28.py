@@ -8,9 +8,9 @@
 
 def num_summer(f_num, s_num):
     if s_num == 0:
-        return 1
+        return f_num
     else:
-        return f_num + num_summer(1, s_num - 1)
+        return num_summer(f_num, s_num - 1) + 1
 
 
 first_number = int(input('Ввведите 1 число: '))
